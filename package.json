@@ -1,11 +1,12 @@
 {
-  "name": "monsters",
-  "version": "0.1.0",
+  "name": "robots",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
-    "react-scripts": "3.2.0"
+    "react-scripts": "3.2.0",
+    "yarn": "^1.22.5"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -27,5 +28,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "editor.formatOnDave": false,
+  "[javascript]": {
+    "editor.formatOnSave": true
   }
 }

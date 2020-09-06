@@ -1,0 +1,64 @@
+.search_label {
+  text-align: left;
+  font-family: 'Indie Flower', cursive, 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+
+  width: 100%;
+  height: 28px;
+  float: right;
+  border: none;
+}
+
+.search-bar {
+  width: 100%;
+  height: 56px;
+  float: right;
+  border: none;
+  margin-top: 1vh;
+
+  border-radius: 4px;
+  background-color: rgba(255,255,255,0.3);
+  transition: 0.3s all;
+}
+
+.search-bar:hover {
+  transform: scale(1.006);
+  background-color: rgba(255, 255, 255, 0.45);
+  box-shadow: 5px 5px 8px 10px rgba(0, 0, 0, 0.05);
+}
+
+ .search-bar_input {
+  font-family: 'Indie Flower', cursive, 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+  
+  width: 100%;
+  height: 56px;
+  position: relative;
+  padding: 0px 16px;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  background-color: transparent;
+  color: #282828;
+  outline: none;
+  box-shadow: 0px 4px 20px 0px transparent;
+  transition: 0.3s background-color ease-in-out, 0.3s box-shadow ease-in-out, 0.1s padding ease-in-out;
+  -webkit-appearance: none;
+} 
+
+
+.search-bar_input::-webkit-input-placeholder {
+  font-family: 'Indie Flower', cursive, 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+
+.search-bar_input::-moz-placeholder {
+  font-family: 'Indie Flower', cursive, 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+
+.search-bar_input:-ms-input-placeholder {
+  font-family: 'Indie Flower', cursive, 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+
+.search-bar_input:-moz-placeholder {
+  font-family: 'Indie Flower', cursive, 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}

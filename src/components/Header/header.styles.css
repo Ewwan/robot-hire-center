@@ -1,0 +1,12 @@
+.header-component {
+  background-color: rgba(3, 69, 95, 0.438);
+  color: whitesmoke;
+  min-height: 5vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 3vw 0 3vw;
+
+  box-shadow: 5px 5px 8px 10px rgba(0, 0, 0, 0.05);
+}

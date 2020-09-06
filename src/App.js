@@ -1,26 +1,61 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import { Header } from "./components";
+import { CardList } from "./components";
+import { SearchBar } from './components';
+
+import "./App.css";
+
+class App extends React.Component {
+  constructor() {
+    super();
+
+    this.state = {
+      characters: [],
+      searchField: '',
+      nameLabel: 'Name'
+    };
+  }
+
+
+  componentDidMount() {
+    fetch("https://jsonplaceholder.typicode.com/users")
+      .then(response => response.json())
+      .then(users => this.setState({ characters: users }))
+    }
+
+    handleChangeSearchBar = (e) => {
+        return this.setState({ searchField: e.target.value})
+        };
+      
+    viewSearchedCharacters = (characters, searchField) => {
+        if(searchField.length > 0 ) { 
+          return characters.filter(character => character.name.toLowerCase().includes(searchField.toLowerCase()));
+        } else {
+          return characters;
+        }
+    };
+            
+      robotImage: "https://robohash.org/{{props.monster.id}}?set=set2";
+
+  render() {
+    const { characters, searchField, nameLabel } = this.state;
+    
+    return (
+      <div className="App">
+        <div className="header">
+          <Header />
+        </div>
+        <div className="search">
+          <SearchBar placeholder={nameLabel} onChange={this.handleChangeSearchBar} />
+        </div>
+        <div className="main-content">
+          <CardList characters={this.viewSearchedCharacters(characters, searchField)} src={this.robotImage} />
+        </div>
+        <div className="footer">@2020 by Ewa Iwan</div>
+      </div>
+    );
+  }
 }
 
 export default App;

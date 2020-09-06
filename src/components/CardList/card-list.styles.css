@@ -1,0 +1,23 @@
+
+.card-list {
+  background-color: white;
+  max-width: 90vw;
+  margin: 25px auto auto auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 20px;
+  grid-template-rows: auto auto;
+}
+
+
+@media screen and (max-width: 1040px) { 
+  .card-list {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media screen and (max-width: 700px) { 
+  .card-list {
+  grid-template-columns: auto;
+  }
+}
