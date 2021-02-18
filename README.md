@@ -1,3 +1,8 @@
+Hello! Welcome to our Robot Hire Center.
+It's a web app that allows to search for a robot to hire, built using React with CSS3 and fetching data from a Free Fake Online REST API called JSONPlaceholder.
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
